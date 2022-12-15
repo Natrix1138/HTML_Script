@@ -1,0 +1,16 @@
+<script>
+
+window.onload = function(){
+    var currentDate = new Date();
+    var time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+    document.getElementById("clock").innerHTML = time;
+    setInterval(function(){
+        currentDate = new Date();
+        time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+        document.getElementById("clock").innerHTML = time;
+    },1000);
+};
+
+</script>
+
+<div id="clock" style="font-weight:bold; font-size:40px;"></div>
